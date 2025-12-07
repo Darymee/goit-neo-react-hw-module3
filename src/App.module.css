@@ -1,0 +1,86 @@
+.page {
+  min-height: 100vh;
+  padding: 28px 16px;
+  background:
+    radial-gradient(
+      900px 420px at 20% 10%,
+      rgba(127, 179, 255, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 420px at 85% 20%,
+      rgba(103, 242, 198, 0.16),
+      transparent 55%
+    ),
+    radial-gradient(
+      900px 520px at 40% 95%,
+      rgba(255, 207, 106, 0.1),
+      transparent 60%
+    ),
+    #070b14;
+}
+
+.container {
+  width: min(980px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  gap: 18px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 4px 2px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  color: #eaf0ff;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: rgba(234, 240, 255, 0.55);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+@media (min-width: 860px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  }
+}
+
+.leftCol,
+.rightCol {
+  min-width: 0;
+}
+
+.sectionTitle {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 800;
+  color: rgba(234, 240, 255, 0.85);
+}
+
+.empty {
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: #0b1220;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28);
+
+  color: rgba(234, 240, 255, 0.65);
+  font-size: 13px;
+}
